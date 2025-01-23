@@ -4,13 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        label {
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 <body>
     <form action="#" method="get" target="_blank" autocomplete="off">
         <p>O meu formulário</p>
         <p>
-            <input type="text" id="nome" name="nomes" placeholder="Seu nome">
+        <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nomes" placeholder="Seu nome" required>
         </p>
+        <p>
+            <label for="dev">Sou um dev:</label>
+            <input type="checkbox" id="dev" name="dev" value="sim">
+        </p>
+        <p>
+            <label for="dev2">Sou um dev:</label>
+            <input type="checkbox" id="dev2" name="dev2" value="sim">
+        </p>
+        <p>
+            <label for="dev3">Sou um dev:</label>
+            <input type="checkbox" id="dev3" name="dev3" value="sim">
+        </p>
+
+        <p>
+            Genero: <br>
+            <label for="feminino">feminino:</label>
+            <input type="radio" id="feminino" name="genero" value="sim">  <br>      
+
+            <label for="masculino">masculino:</label>
+            <input type="radio" id="masculino" name="genero" value="sim"><br>   
+            
+            <label for="outo">outro:</label>
+            <input type="radio" id="outro" name="genero" value="sim">
+        </p>
+
+        <p>
+            <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+            </p>
+
+            <p>
+                <label for="datetime">Data:</label>
+                    <input type="datetime" id="datetime" name="datetime">
+                </p>
+
+                <p>
+                    <label for="tine">Hora:</label>
+                        <input type="time" id="time" name="time">
+                    </p>
+
+                    <p>
+                        <label for="color">Cor preferida:</label>
+                            <input type="color" id="color" name="color">
+                    </p>
+            
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@gmail.com">
+        </p>
+            
+        <p>
+            <label for="file">foto:</label>
+            <input type="file" id="file" name="file" accept=".png, .svg, image/*" multiple>
+        </p>
+            
+        <p>
+            <label for="number">Numero:</label>
+            <input type="number" id="numbername="number" placeholder="digite um numero">
+        </p>
+            
+
         <p>
             <button type="reset">Reset</button>
             <button type="submit">Enviar</button>
