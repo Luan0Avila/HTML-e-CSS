@@ -83,11 +83,63 @@
             <input type="number" id="numbername="number" placeholder="digite um numero">
         </p>
             
+        <p>
+            <label for="password">Digite sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
 
         <p>
-            <button type="reset">Reset</button>
-            <button type="submit">Enviar</button>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2"
+            list="tickmarks">
         </p>
-    </form>
+        <datalist id="tickmarks">
+            <option value="0" label="50%">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100">
+            </datalist>
+    
+            <p>
+                <label for="URL">Sua URL:</label>
+                <input type="url" id="URL" name="url" placeholder="URL">
+            </p>
+
+            <p>
+                <label for="select">selecione alguma opção</label>
+                <select name="select" id="select">
+                    <optgroup label="Teste">
+                    <option value="qualquer" label="label 1"></option>
+                    <option value="qualquer 2" label="label 2"></option>
+                    <option value="qualquer 3" label="label 3"></option>
+                </optgroup>
+    
+                    <optgroup label="Teste 2">
+                    <option value="qualquer" label="label 1"></option>
+                    <option value="qualquer 2" label="label 2"></option>
+                    <option value="qualquer 3" label="label 3"></option>
+                </optgroup>
+                </select>
+            </p>
+
+
+            <p>
+                <label for="textarea">textarea</label>
+                <textarea name="textarea" id="textarea" rows="10" cols="9"></textarea>
+            </p>
+    
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Enviar</button>
+            </p>
+    
+        </form>
 </body>
 </html>
