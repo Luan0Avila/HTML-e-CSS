@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    background: yellow;
+    height: 640px;
+    width: 640;
+}
+
+.flex-item {
+    width: 33.33;
+    color: white;
+background: red;
+margin: 10px;
+}
+.flex-item:nth-child(3) {
+    font-size: 30px;
+}
